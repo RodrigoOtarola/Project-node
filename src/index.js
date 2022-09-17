@@ -23,6 +23,9 @@ app.set('view engine','ejs')
 //ruta.
 app.use(indexRoute);
 
+//ruta de archivo estatico css, con join concateno la ruta necesaria: __dirname = dir src.
+app.use(express.static(join(__dirname,'public',)))
+
 //Puerto
 app.listen(3000);
 console.log('Servidor listo en el puerto ',3000);

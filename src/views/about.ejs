@@ -5,13 +5,35 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%=title%></title>
+    <title><%= title %></title>
+    <%- include('partials/head') %>
 </head>
 <body>
 
 <!--Incluir navegacion, despues del % lleva '-' para decirle a ejs que interprete algo-->
-<%- include('partials/navigation')%>
+<%- include('partials/navigation') %>
 
-<h2>Hola desde about</h2>
+<main class="vh-100 container pt-2 text-center d-flex justify-content-center align-items-center">
+    <section>
+        <h1 class="display-1">About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae eaque eveniet voluptate? Ab accusantium
+            autem doloremque earum error eum exercitationem illo iusto laboriosam laborum laudantium nihil nostrum,
+            numquam placeat quibusdam ratione soluta, ut veniam vero voluptatibus! Dolor doloremque dolores ducimus
+            error harum magni neque non sint! Ad animi aperiam at aut consequatur, corporis debitis distinctio
+            doloremque, ducimus enim et laboriosam laudantium molestias necessitatibus nemo odio quidem veniam vero!
+            Doloremque, ea esse eveniet hic libero maiores nisi ratione recusandae sed sequi tempora voluptates
+            voluptatibus! Accusantium dicta et expedita neque pariatur qui, repellat saepe sapiente sed tenetur. Alias
+            aliquam dicta, dolore ea eos est eveniet illum ipsam minima nam necessitatibus nemo nulla perspiciatis
+            quidem ratione, repudiandae sint suscipit unde velit voluptatum. Accusantium animi aspernatur atque commodi
+            consequatur cumque delectus distinctio et id illo numquam obcaecati optio quaerat recusandae rem rerum,
+            veniam! Mollitia, vel, velit. Commodi culpa fuga magnam quaerat quam sunt, voluptates voluptatum. Animi
+            architecto at corporis cupiditate, earum eum excepturi laborum nemo odio odit officia placeat, quaerat
+            recusandae, reprehenderit saepe sapiente ullam ut voluptatum. Aliquam aliquid atque beatae cum debitis
+            deserunt dolorem enim id in ipsam, itaque labore molestiae natus nihil pariatur perspiciatis quam, quasi
+            quibusdam quos repudiandae sit ut voluptatem.</p>
+    </section>
+</main>
+<!--Incluir footer-->
+<%- include('partials/footer') %>
 </body>
 </html>
